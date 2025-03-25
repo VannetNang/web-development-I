@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grid Gallery</title>
+    <meta charset="utf-8" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fefefe;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      #gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-template-rows: auto;
+        grid-gap: 2em;
+        gap: 2em;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Grid Gallery</h1>
+    </header>
+    <main>
+      <div id="gallery">
+        <img src="bird1.jpg" alt="Bird 1" />
+        <img src="bird2.jpg" alt="Bird 2" />
+        <img src="bird3.jpg" alt="Bird 3" />
+        <img src="bird4.jpg" alt="Bird 4" />
+        <img src="bird5.jpg" alt="Bird 5" />
+        <img src="bird6.jpg" alt="Bird 6" />
+      </div>
+    </main>
+  </body>
+</html>
